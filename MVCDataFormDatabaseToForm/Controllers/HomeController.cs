@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVCDataFormDatabaseToForm.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -29,6 +30,20 @@ namespace MVCDataFormDatabaseToForm.Controllers
 
         public ActionResult SignUp()
         {
+            ViewBag.Message = "Employee Sing Up";
+
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult SignUp(EmployeeModel model)
+        {
+            if (ModelState.IsValid)
+            {
+
+            }
+
             ViewBag.Message = "Employee Sing Up";
 
             return View();
