@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataLibrarry.Models
+namespace DataLibrary.Models
 {
-    class EmployeeModel
+    public class EmployeeModel
     {
         public int Id { get; set; }
         public int EmployeeId { get; set; }
